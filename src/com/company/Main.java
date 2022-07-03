@@ -9,44 +9,45 @@ public class Main {
         var now = LocalDateTime.now();
         var monthNumber = now.getMonthValue();
 
-        switch(monthNumber){
+        String message = switch(monthNumber){
             case 1:
-                System.out.println("january");
-                break;
+                yield "january";
+                
             case 2:
-                System.out.println("february");
-                break;
+                yield "february";
+                
             case 3:
-                System.out.println("march");
-                break;
+                yield "march";
+                
             case 4:
-                System.out.println("april");
-                break;
+                yield "april";
+                
             case 5:
-                System.out.println("may");
-                break;
+                yield "may";
+                
             case 6:
-                System.out.println("june");
-                break;
+                yield "june";
+                
             case 7:
-                System.out.println("july");
-                break;
+                yield "july";
+                
             case 8:
-                System.out.println("august");
-                break;
+                yield "august";
+                
             case 9:
-                System.out.println("september");
-                break;
+                yield "september";
+                
             case 10:
-                System.out.println("octoober");
-                break;
+                yield "october";
+                
             case 11:
-                System.out.println("november");
-                break;
+                yield "november";
+                
             default:
-                System.out.println("december");
+                yield "december";
 
-        }
+        };
+        System.out.println(message.substring(0, 1).toUpperCase() + message.substring(1));
 
     }
 }

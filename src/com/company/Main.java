@@ -3,6 +3,7 @@ package com.company;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,16 +30,16 @@ public class Main {
         double result;
         switch (operation) {
             case "+":
-                result = d1 + d2;
+                result = CalcHelper.addValues(d1, d2);
                 break;
             case "-":
-                result = d1 - d2;
+                result = CalcHelper.subValues(d1, d2);
                 break;
             case "*":
-                result = d1 * d2;
+                result = CalcHelper.multValues(d1, d2);
                 break;
             case "/":
-                result = d1 / d2;
+                result = CalcHelper.divValues(d1, d2);
                 break;
             default:
                 System.out.println("You didn't choose a valid operation");

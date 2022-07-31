@@ -5,13 +5,12 @@ public class ClothingItem {
     public static final String SHIRT = "Shirt";
     public static final String PANTS = "Pants";
     public static final String SHOES = "Shoes";
-
-    private String type;
-    private String size;
+      private String type;
+    private ClothingSize size;
     private double price;
     private int quantity;
 
-    public ClothingItem(String type, String size, double price, int quantity) {
+    public ClothingItem(String type, ClothingSize size, double price, int quantity) {
         this.type = type;
         this.size = size;
         this.price = price;
@@ -26,11 +25,11 @@ public class ClothingItem {
         this.type = type;
     }
 
-    public String getSize() {
+    public ClothingSize getSize() {
         return size;
     }
 
-    public void setSize(String size) {
+    public void setSize(ClothingSize size) {
         this.size = size;
     }
 

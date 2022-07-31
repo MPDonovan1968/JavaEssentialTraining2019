@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        var item = new ClothingItem(ClothingItem.SHIRT, ClothingSize.L, 19.99, 3);
+        var item = new ClothingItem(ClothingItem.SHIRT, ClothingSize.XL, 19.99, 3);
 
         var totalPrice = item.getPrice() * item.getQuantity();
         var formatter = NumberFormat.getCurrencyInstance();

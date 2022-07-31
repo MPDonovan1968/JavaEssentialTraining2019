@@ -1,7 +1,7 @@
 package com.company.model;
 
 public enum ClothingSize {
-    S( description: "Small"), M( description: "Medium"), L( description: "Large"), XL( description: "Xtra Large");
+    S( "Small"), M( "Medium"), L( "Large"), XL( "Xtra Large"), XXL("Double X");
     private String description;
 
     ClothingSize(String description) {
